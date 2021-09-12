@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="menuInicio">
+            <a href="index.html">Home</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Contacto</a>
+            <a href="registrar.html">Regístrese</a>
+            <a href="sucursales.html">Sucursales</a>
+        </nav>
+        <br><br>
+        <h1><strong>La Cocina de Juan</strong></h1>
+    </header>
+    <main>
+        <h2>Formulario de registro</h2>
+        <form id="formulario_contacto" action="index.html" method="POST">
+            <label for="name">Nombre: </label>
+            <input type="text" name="name">
+
+            <label for="surname">Apellido: </label>
+            <input type="text" name="surname">
+            <br /><br />
+
+            <label>Dirección</label>
+            <br />
+            <label for="streetName">Calle: </label>
+            <input type="text" name="streetName">
+
+            <label for="streetNumber">Número: </label>
+            <input type="text" name="streetNumber">
+
+            <label for="city">Ciudad: </label>
+            <input type="text" name="city">
+
+            <label for="cp">Código Postal: </label>
+            <input type="number" name="cp">
+            <br /><br />
+
+            <label for="telephone">Teléfono: </label>
+            <input type="number" name="telephone">
+
+            <label for="birthday">Fecha Nac: </label>
+            <input type="date" name="birthday">
+            <br /><br />
+
+            <label for="genero">Género: </label>
+            <input type="radio" name="genero" value="hombre">Hombre
+            <input type="radio" name="genero" value="mujer">Mujer
+            <input type="radio" name="genero" value="otro">Otro
+            <br /><br />
+
+            <label for="conocimientos">Conocimientos previos: </label>
+            <input type="checkbox" name="conocimientos" value="html">HTML
+            <input type="checkbox" name="conocimientos" value="css">CSS
+            <input type="checkbox" name="conocimientos" value="javascript">Javascript
+            <input type="checkbox" name="conocimientos" value="php">PHP
+            <input type="checkbox" name="conocimientos" value="mysql">MySQL
+            <br /><br />
+
+            <label for="estudios">Estudios</label>
+            <select name="estudios">
+                <option value="primario">Primario</option>
+                <option value="secundario">Secundario</option>
+                <option value="terciario">Terciario</option>
+                <option value="universitario">Universitario</option>
+            </select>
+            <br /><br />
+
+            <label for="mensaje">Comentarios: </label>
+            <br />
+            <textarea rows="5" name="mensaje" placeholder="Mensaje"></textarea>
+            <br />
+            <input type="submit" name="enviar" value="Enviar" />
+
+        </form>
+    </main>
+    
+    <br />
+    <footer>
+        <table id="logos">
+            <th>
+            <td><img src="https://cdn.icon-icons.com/icons2/895/PNG/512/Twitter_icon_icon-icons.com_69154.png"
+                    alt="twitter" width="20" height="20"></td>
+            </th>
+            <th>
+            <td><img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/facebook_logo_icon_147291.png" alt="facebook"
+                    width="20" height="20"></td>
+            </th>
+            <th>
+            <td><img src="https://i.pinimg.com/originals/3b/21/c7/3b21c7efd2ba9c119fb8d361acacc31d.png" alt="instagram"
+                    width="20" height="20"></td>
+            </th>
+        </table>
+        <p>Derechos reservados &copy;2020</p>
+    </footer>
+
+</body>
+
+</html>
