@@ -9,7 +9,7 @@ header, footer {
     text-decoration: none;
     text-align: center;
     background-color: rgb(54, 54, 54);
-    width: 80px;
+    width: auto;
     height: 25px;
     float: left;
     padding: 2px;
@@ -34,4 +34,32 @@ footer {
 #logos {
     margin-left: auto;
     margin-right: auto;
+}
+
+/*-----CLIENTES-------*/
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid_item {
+    text-align: center;
+}
+
+/*------MEDIA QUERY -------*/
+
+@media (max-width:900px) {
+    .grid_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:550px) {
+    .grid_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
